@@ -20,6 +20,7 @@ USER spring
 COPY --from=build /app/target/*.jar app.jar
 
 ENV SPRING_PROFILES_ACTIVE=prod
+ENV TZ=America/Sao_Paulo
 
 EXPOSE 8080
 
