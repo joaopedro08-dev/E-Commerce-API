@@ -23,7 +23,7 @@ abstract public class BaseEntity {
     private LocalDateTime updatedAt;
 
     @PrePersist
-    protected void onCreate() {
+    protected final void onCreate() {
         LocalDateTime now = DateUtils.databaseNow();
 
         createdAt = now;
@@ -31,7 +31,7 @@ abstract public class BaseEntity {
     }
 
     @PreUpdate
-    protected void onUpdate() {
+    protected final void onUpdate() {
         updatedAt = DateUtils.databaseNow();
     }
 }

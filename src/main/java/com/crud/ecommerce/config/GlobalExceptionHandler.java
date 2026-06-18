@@ -1,4 +1,4 @@
-package com.crud.ecommerce.infrastructure.config;
+package com.crud.ecommerce.config;
 
 import com.crud.ecommerce.dto.response.ErrorResponse;
 import com.crud.ecommerce.exception.BadRequestException;

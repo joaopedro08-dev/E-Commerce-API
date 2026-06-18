@@ -11,8 +11,4 @@ final public class EntityFinderUtils {
         return repository.findById(id)
                 .orElseThrow(() -> new NotFoundException(notFoundMessage));
     }
-
-    public void create(){}
-    public void update(){}
-    public void delete(){}
 }
