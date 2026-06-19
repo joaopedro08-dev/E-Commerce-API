@@ -17,7 +17,7 @@ public class HealthController {
                 "status", "ok",
                 "success", true,
                 "message", "E-commerce API is running",
-                "endpoints", List.of("/clients", "/products", "/reviews"),
+                "endpoints", List.of("/client", "/product", "/review"),
                 "methods", Map.of(
                         "GET", "/endpoint and /endpoint/{id}",
                         "POST", "/endpoint",
