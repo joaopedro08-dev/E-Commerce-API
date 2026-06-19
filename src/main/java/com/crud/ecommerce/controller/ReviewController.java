@@ -33,7 +33,7 @@ public class ReviewController {
     }
 
     @PutMapping("/{id}")
-    public Response updateReview(@PathVariable Long id, ReviewUpdateInput input) {
+    public Response updateReview(@PathVariable Long id, @RequestBody ReviewUpdateInput input) {
         return reviewService.updateReview(id, input);
     }
 

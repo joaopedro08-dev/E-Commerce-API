@@ -33,7 +33,7 @@ public class ClientController {
     }
 
     @PutMapping("/{id}")
-    public Response updateClient(@PathVariable Long id, ClientUpdateInput input) {
+    public Response updateClient(@PathVariable Long id, @RequestBody ClientUpdateInput input) {
         return clientService.updateClient(id, input);
     }
 
